@@ -1,0 +1,1243 @@
+*{
+    box-sizing:border-box;
+}
+/*全局样式*/
+#top,#logo,#banner,#main,#footer-box,#footer{
+    width: 100%;
+}
+#top-main,#e-logo,#float,#main-content,#cooperation,#information,#link{
+    width: 1182px;
+    margin: 0 auto;
+}
+/*顶部导航栏*/
+#top{
+    height: 30px;
+    border-bottom: 1px solid #D8D9DB;
+    background: #FBFBFB;
+}
+#top-main{
+    display: flex;
+    justify-content: space-between;
+}
+#top-main>ul{
+    display: flex;
+    line-height: 30px;
+}
+#top-main>ul:first-child>li{
+    margin-right: 15px;
+}
+#top-main a{
+    color: #666;
+}
+#top-main a:hover{
+    text-decoration: underline;
+}
+/*下拉菜单样式*/
+ul.rt-login>li:not(.extra)>a{
+    display:inline-block;
+    height: 25px;
+    margin-top:3px;
+    padding:2px 0 2px 5px;
+    text-align: left;
+    border: 1px solid transparent;
+    line-height: 15px;
+}
+ul.rt-login>li:not(.extra)>a.hover{
+    border-color: #B3B3B3;
+    border-bottom-color:#fff;
+    background: #fff;
+    position: relative;
+    z-index: 200;
+}
+ul.rt-login>li.register>a,ul.rt-login>li.more>a{
+    width: 60px;
+    background:url(../Images/chengewang/top_arr.gif)no-repeat 40px 8px;
+}
+ul.rt-login>li.register>a:hover,ul.rt-login>li.more>a:hover{
+    background:#fff url(../Images/chengewang/top_arr.gif) no-repeat 40px 8px;
+}
+ul.rt-login>li.allbusness>a{
+    width:80px;
+    background:url(../Images/chengewang/top_arr.gif) no-repeat 60px 8px;
+}
+ul.rt-login>li.allbusness>a:hover{
+    background:#fff url(../Images/chengewang/top_arr.gif) no-repeat 60px 8px;
+}
+ul.rt-login li.extra{
+    margin: 0 10px;
+}
+/*登录弹出框*/
+ul.rt-login>li.dropdown{
+    position: relative;
+}
+ul.rt-login>li.dropdown>ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 29px;
+    width: 60px;
+    border: 1px solid #B3B3B3;
+    background: #fff;
+    text-align: center;
+    line-height: 25px;
+    z-index: 50;
+}
+/*全部业务弹出框*/
+ul.rt-login>li.allbusness>ul{
+    width: 140px;
+    text-align: left;
+    padding: 5px 30px 5px 5px;
+}
+ul.rt-login>li.allbusness>ul>li>a{
+    font-weight: bold;
+}
+ul.rt-login>li.allbusness>ul>li li{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*橙E网logo*/
+#e-logo{
+    display: flex;
+    height: 52px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+}
+#e-logo>div{
+    display: flex;
+    align-items: center;
+}
+#e-logo>div>a{
+    margin: 0 5px;
+}
+#e-logo>div>a:last-child{
+    display: inline-block;
+    height: 52px;
+    padding-left: 10px;
+    border-left: 1px solid #000;
+}
+#e-logo>ul{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+#e-logo>ul a{
+    font-weight:600;
+    font-size: 18px;
+    color: #222;
+}
+#e-logo>ul li.active a{
+    color: #FE802A;
+}
+#e-logo>ul li:hover a{
+    color: #FE802A;
+}
+
+/*中间banner广告*/
+#banner{
+    position: relative;
+    z-index: 10;
+}
+/*广告轮播*/
+.wrap{
+    width: 100%;
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+}
+#pic{
+    height: 380px;
+    position: absolute;
+}
+#pic li{
+    width: 100%;
+    height: 380px;
+}
+#pic img{
+    width: 100%;
+    height: 100%;
+}
+
+/*轮播小圆点*/
+#banner>ul{
+    display: flex;
+    justify-content: space-between;
+    position:absolute;
+    left: 50%;
+    bottom:20px;
+    width: 70px;
+    z-index: 200;
+}
+#banner>ul li{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #EDE4DA;
+}
+#banner>ul li.active{
+    background: #fff;
+}
+/*左侧全部业务*/
+#float{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 380px;
+    position: absolute;
+    top: 0;
+    left: 90px;
+}
+#allbusiness{
+    width: 200px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:0 20px;
+    background: url(../Images/chengewang/bgTouming.png);
+}
+#allbusiness>ul{
+    padding: 10px 0;
+}
+#allbusiness>ul li{
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#allbusiness>ul>li s{
+    width: 11px;
+    height: 11px;
+    background: url(../Images/chengewang/ico3.png) no-repeat 0 -11px;
+    cursor: pointer;
+}
+#allbusiness>ul>li>a{
+    color: #fff;
+    font-size: 16px;
+}
+#allbusiness>ul>li>a:hover{
+    color: #E52321;
+}
+#allbusiness>p{
+    padding: 15px 0;
+}
+#allbusiness>p>a{
+    color: #fff;
+}
+#allbusiness>p>a:hover{
+    color: #FF8400;
+}
+#allbusiness>ul ul{
+    width: 100px;
+    padding: 5px 0;
+    display: none;
+}
+#allbusiness>ul ul li{
+   padding: 3px 0;
+}
+#allbusiness>ul ul li a{
+    color: #999;
+}
+#allbusiness>ul ul li a:hover{
+    color: #FF8400;
+}
+/*右侧登录*/
+#rt-login{
+    width: 300px;
+    height: 280px;
+    background: url(../Images/chengewang/bgTouming.png);
+    text-align: center;
+    padding: 0 15px ;
+}
+#rt-login li{
+    width: 220px;
+    margin: 10px auto;
+}
+#rt-login a{
+    color: #fff;
+}
+#rt-login li:nth-child(2) a,#rt-login li:nth-child(3) a{
+    display: block;
+    width: 220px;
+    height: 40px;
+    background: #008FF3;
+    line-height: 40px;
+    font-size: 18px;
+}
+#rt-login li:nth-child(3) a{
+    background: #FF9000;
+}
+#rt-login li:nth-child(2) a:hover{
+    background: #007CD2;
+}
+#rt-login li:nth-child(3) a:hover{
+    background: #E28000;
+}
+#rt-login>li:nth-child(4){
+    font-size: 14px;
+    padding: 10px 0;
+    width: 270px;
+    border-bottom: 1px solid #888381 ;
+}
+#rt-login li:nth-child(4) i{
+    display: inline-block;
+    width: 13px;
+    height: 15px;
+    background:url(../Images/chengewang/ico2.png) no-repeat;
+    margin-left:10px;
+    position: relative;
+    top: 2px;
+}
+#rt-login li:nth-child(4) a:hover{
+    color: #FF5600;
+}
+#rt-login>li:last-child{
+    display: flex;
+    justify-content: space-between;
+}
+#rt-login>li:last-child b{
+    font-size: 18px;
+    color: #fff;
+    font-weight: normal;
+}
+#rt-login>li:last-child span{
+    color: #fff;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+/*主体内容*/
+#main{
+    background: #F0F0F0;
+    padding: 40px;
+}
+#news{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+#news>p{
+    width: 240px;
+    padding-left: 30px;
+}
+#news>dl{
+    display: flex;
+    justify-content: space-between;
+    width: 26.56%;
+}
+#news>dl:last-child{
+   padding-left: 12px;
+}
+#news>dl>dd>a{
+    display: block;
+    padding: 0 25px 0 15px;
+    line-height: 20px;
+}
+#news>dl>dd>a:hover{
+    color: #FF5600;
+}
+#news>dl>dd>a span{
+    font-size: 14px;
+}
+#news>dl>dd>a p{
+    padding: 5px 0;
+}
+/*橙e发货宝闪亮上线*/
+#e-product{
+    display: flex;
+    border:1px solid #DBDBDB;
+    overflow: hidden;
+}
+#e-product ul li{
+    position: relative;
+
+}
+#e-product ul li img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*鼠标移入图片移动*/
+#e-product ul li img.moveLeft{
+    left: -10px;
+    transition: all .3s linear;
+}
+#e-product ul li img.moveRight{
+    left: 0;
+    transition: all .3s linear;
+}
+#e-product ul:first-child {
+    width: 240px;
+    height: 300px;
+}
+#e-product ul:first-child img{
+    width: 260px;
+    height: 300px;
+}
+#e-product ul:last-child{
+    display: flex;
+    flex-wrap: wrap;
+    width: 942px;
+    height: 300px;
+}
+#e-product ul:last-child li{
+    overflow: hidden;
+}
+#e-product ul:last-child img{
+    height: 150px;
+}
+#e-product ul:last-child li:first-child{
+    width: 240px;
+}
+#e-product ul:last-child li:first-child img{
+    width: 250px;
+}
+#e-product ul:last-child li:nth-child(2){
+     width: 400px;
+}
+#e-product ul:last-child li:nth-child(2) img{
+    width: 410px;
+}
+#e-product ul:last-child li:nth-child(3){
+    width: 300px;
+}
+#e-product ul:last-child li:nth-child(3) img{
+    width: 310px;
+}
+#e-product ul:last-child li:nth-child(4){
+    width: 240px;
+}
+#e-product ul:last-child li:nth-child(4) img{
+    width: 250px;
+}
+#e-product ul:last-child li:nth-child(5){
+    width: 240px;
+}
+#e-product ul:last-child li:nth-child(5) img{
+    width: 250px;
+}
+#e-product ul:last-child li:last-child{
+    width: 460px;
+}
+#e-product ul:last-child li:last-child img{
+    width: 470px;
+}
+/*公共样式*/
+.floor{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.floor .function{
+    display: flex;
+}
+.floor .function .help{
+    position: relative;
+    width: 240px;
+    height: 288px;
+}
+.floor .function .help ul{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+}
+.floor .function .help {
+    color: #fff;
+}
+.floor .function .help ul li:first-child{
+    font-size: 32px;
+}
+.floor .function .help ul li:nth-child(2){
+    font-size: 18px;
+    padding: 8px 0;
+}
+.floor .function .help  b{
+    display: inline-block;
+    width: 26px;
+    height: 29px;
+    background: url(../Images/chengewang/ico12.png) no-repeat;
+}
+.floor .function .help:hover i{
+    display: block;
+    position: absolute;
+    width: 240px;
+    height: 288px;
+    top: 0;
+    left: 0;
+    background: url(../Images/chengewang/bgTouming2.png);
+}
+.floor .function .help:hover b{
+    background: url(../Images/chengewang/ico12.png) no-repeat 0 -29px;
+}
+.floor .list{
+    width: 622px;
+    height: 288px;
+    border: 1px solid #DBDBDB;
+    background: #fff;
+
+}
+/*橙E融资*/
+#financing .list ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+#financing .list ul li{
+    width: 25%;
+    padding: 30px 0 0 30px;
+}
+#financing .list ul li p{
+    padding: 10px 0;
+    font-size: 18px;
+}
+#financing .list ul li a:hover{
+    color: #FF564F;
+}
+#financing .list ul li s{
+    display: inline-block;
+    width: 44px;
+    height: 34px;
+}
+#financing .list ul li:first-child s{
+    background: url(../Images/chengewang/ico17.png) no-repeat;
+}
+#financing .list ul li:nth-child(2) s{
+    background: url(../Images/chengewang/ico18.gif) no-repeat;
+}
+#financing .list ul li:nth-child(3) s{
+    background: url(../Images/chengewang/ico19.gif) no-repeat;
+}
+#financing .list ul li:nth-child(4) s{
+    background: url(../Images/chengewang/ico20.gif) no-repeat;
+}
+#financing .list ul li:nth-child(5) s{
+     background: url(../Images/chengewang/ico21.gif) no-repeat;
+}
+#financing .list ul li:nth-child(6) s{
+    background: url(../Images/chengewang/ico22.gif) no-repeat;
+}
+#financing .list ul li:nth-child(7) s{
+    background: url(../Images/chengewang/ico23.gif) no-repeat;
+}
+#financing .list ul li:last-child s{
+    background: url(../Images/chengewang/ico24.gif) no-repeat;
+}
+#financing .list ul li a:hover s{
+    background-position: 0 -34px;
+}
+/*第二层平安管家*/
+#steward .list{
+    display: flex;
+    justify-content: space-between;
+}
+#steward .list .steward1{
+    display: flex;
+}
+#steward .list .steward1 dl{
+    padding: 15px 0 15px 15px;
+}
+#steward .list .steward1 p{
+    font-size: 18px;
+}
+#steward .list .steward1 span{
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 0;
+}
+/*右侧发货宝*/
+ .steward2{
+    background: #18B3A0;
+    padding-right: 10px;
+    width: 195px;
+}
+  .steward2 h3{
+    font-weight: normal;
+    padding: 15px 0 15px 15px;
+    line-height: 25px;
+}
+ .steward2 p{
+    font-size: 18px;
+}
+  .steward2 h3 a{
+    color: #fff;
+}
+  .steward2 h3 a:hover{
+    text-decoration: underline;
+}
+ .steward2 ul li{
+    display: flex;
+    line-height: 35px;
+}
+ .steward2 ul input{
+    width: 100px;
+    height: 26px;
+    padding: 0 5px;
+    color: #BBB;
+    background: #fff;
+}
+ .steward2 ul span{
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+    font-size: 14px;
+    margin-right: 10px;
+    color: #fff;
+}
+.steward2 div.areaSel{
+    position:relative;
+}
+ .steward2 div.weightBox{
+    position:relative;
+}
+.steward2 ul i{
+    width: 7px;
+    height: 5px;
+    display: inline-block;
+    background: url(../Images/chengewang/ico25.png) no-repeat;
+    position: absolute;
+    z-index: 2;
+    right: 5px;
+    top: 15px;
+}
+.steward2 a.askPrice{
+    display: block;
+    background: #3d988d;
+    color: #9eccc6;
+    text-align: center;
+    height: 26px;
+    line-height: 26px;
+    margin: 10px 18px;
+    font-size: 14px;
+}
+.steward2 ul em{
+    position: absolute;
+    display: inline-block;
+    left: 5px;
+    top: 0;
+    color: #bbbbbb;
+}
+.steward2 ul .moveRight{
+     left: 80px;
+     transition:all .5s linear;
+ }
+.steward2 ul .moveLeft{
+    left: 5px;
+    transition:all .5s linear;
+}
+.weight:focus,.volume:focus {
+    outline:none;
+    border: 1px solid #FF5600;
+    position: relative;
+}
+/*始发地、目的地*/
+.steward2 .city{
+    display: none;
+    position: absolute;
+    left: 1px;
+    top: 29px;
+    width: 300px;
+    background: #fff;
+    z-index: 100;
+}
+.steward2 .areaTitle{
+    display: flex;
+    justify-content: space-between;
+    border:1px solid #ddd;
+    border-bottom: none;
+    padding: 15px 15px 0 15px;
+}
+.steward2 .areaTitle li{
+    width: 25%;
+    height: 30px;
+
+}
+.steward2 .areaTitle li:last-child{
+    border-right: 1px solid #ddd;
+}
+.steward2 .areaTitle a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    border:1px solid #ddd;
+    border-right: none;
+}
+.steward2 .areaTitle li.active a{
+    border-bottom:none;
+    color: #FE802A;
+}
+.steward2 .container{
+    position: relative;
+    z-index: 200;
+}
+.steward2 .container>ul{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    background: #fff;
+    border:1px solid #ddd;
+    border-top: none;
+    padding: 15px;
+}
+.steward2 .container>ul>li{
+    width: 33%;
+    height: 25px;
+    float: left;
+}
+.steward2 .container ul a{
+    display: block;
+    line-height: 25px;
+    font-size: 14px;
+    padding-left: 15px;
+}
+.steward2 .container .province,.steward2 .container .citys,.steward2 .container .area{
+    display: none;
+}
+/*第三层橙e电商*/
+#e-business .list{
+    display: flex;
+    flex-wrap: wrap;
+}
+#e-business dl{
+    width: 50%;
+    display: flex;
+    padding: 15px 15px 0 15px;
+}
+#e-business dl dd{
+    padding-left: 10px;
+}
+#e-business dl p{
+    padding: 10px 0;
+    font-size: 18px;
+}
+#e-business dl span{
+    font-size: 14px;
+}
+#e-business>div>ul.news{
+    padding: 40px;
+}
+#e-business>div>ul.news li{
+    padding-left: 15px;
+    background: url(../Images/chengewang/ico13.png) no-repeat left 10px;
+}
+
+/*右侧APP*/
+.floor .app{
+    width: 300px;
+    height: 288px;
+    border: 1px solid #DBDBDB;
+    background: #fff;
+}
+.floor .app ul{
+    padding: 40px 0 0 50px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.floor .app ul p{
+    font-size: 20px;
+    color: #222;
+    padding: 15px 0 5px 0;
+}
+.floor .app ul li.current a{
+    display: inline-block;
+    padding: 1px 30px;
+    border: 1px solid #FE802A;
+    background: #fff;
+    margin: 5px 0;
+    color: #FE802A;
+}
+ .floor .app ul li.current a:hover{
+    background: #FF9000;
+     color: #fff;
+ }
+
+/*橙e财富*/
+.floor .e-box{
+    width: 378px;
+    height: 310px;
+    background: #fff;
+    border:1px solid #DBDBDB;
+}
+.floor .e-box .adTitle{
+    height: 66px;
+    font-weight: 100;
+    font-size: 26px;
+    position: relative;
+    line-height: 66px;
+}
+.floor>div:first-child .adTitle{
+    background: #e5243e;
+}
+.floor .e-box .adTitle a{
+    display:flex;
+    padding: 0 20px 0 47px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.floor .e-box .adTitle span{
+    color: #fff;
+}
+.floor .e-box .adTitle b{
+    width: 26px;
+    height: 29px;
+    background: url(../Images/chengewang/ico12.png) no-repeat;
+}
+.floor .e-box .adTitle:hover i{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 66px;
+    top: 0;
+    left: 0;
+    background: url(../Images/chengewang/bgTouming2.png);
+    z-index: 1;
+}
+.floor .e-box .adTitle:hover b{
+    background-position: 0 -29px;
+}
+/*橙e财富轮播*/
+.floor .e-box .cflist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.floor .e-box .cflist>a{
+    width: 13px;
+    height: 22px;
+}
+.floor .e-box .cflist .container{
+    position: relative;
+    width: 273px;
+    height: 183px;
+    overflow: hidden;
+}
+.floor .e-box .cflist .container .wraps{
+     position: absolute;
+     width: 546px;
+     height: 183px;
+ }
+.floor .e-box .cflist .container .wraps li{
+    float: left;
+    width: 273px;
+    height: 183px;
+}
+.floor .e-box .cflist>a.moveLeft{
+    background: url(../Images/chengewang/ico14.png) no-repeat;
+}
+.floor .e-box .cflist>a.moveRight{
+    background: url(../Images/chengewang/ico14.png) no-repeat -18px 0;
+}
+.floor .e-box .cflist h4{
+    font-size: 18px;
+    font-weight: normal;
+    color: #222;
+    padding: 20px 0;
+}
+.floor .e-box .cflist h1{
+    color: #E5243E;
+    font-size: 46px;
+    font-weight: normal;
+}
+.floor .e-box .cflist h1 b{
+    font-size: 20px;
+    color: #666;
+    margin-left: 10px;
+}
+.floor .e-box .cflist p{
+    font-size: 12px;
+    padding: 5px;
+}
+/*跨境e金融*/
+.floor>div:nth-child(2) .adTitle{
+    background: #004090;
+}
+.floor .kjlist{
+    display: flex;
+}
+.floor .kjlist ul{
+    width: 50%;
+    padding: 20px 0 0 40px;
+}
+.floor .kjlist ul li {
+    padding: 2px 0;
+}
+.floor .kjlist ul li:first-child{
+    font-size: 18px;
+    color:#004090;
+}
+.floor .kjlist ul p{
+    font-size: 18px;
+    padding: 5px 0;
+    color: #222;
+}
+.floor .kjlist ul span{
+    font-size: 14px;
+}
+.floor .kjlist ul a:hover p{
+    color: #FF5600;
+}
+/*橙e生活*/
+.floor>div:last-child .adTitle{
+    background: #00AFE1;
+}
+.floor .e-life ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.floor .e-life ul li{
+    width: 50%;
+    text-align: center;
+    margin-top: 25px;
+}
+.floor .e-life ul  p.title{
+    color: #222;
+    font-size: 18px;
+    padding: 5px 0;
+}
+.floor .e-life ul a:hover p{
+    color: #FF5600;
+}
+
+/*底部联盟合作、行情资讯、友情链接*/
+.footer{
+    padding: 20px 0;
+}
+#footer-box>div:first-child{
+    background: #fff;
+}
+#footer-box>div:nth-child(2){
+    background: #F0F0F0;
+}
+#footer-box>div:last-child{
+    background: #fff;
+}
+/*联盟合作*/
+#cooperation>div{
+    display: flex;
+    justify-content: space-between;
+}
+p.title{
+    color: #222;
+    font-size: 18px;
+    padding: 20px 0;
+}
+#cooperation>div dl{
+    width: 280px;
+    overflow: hidden;
+}
+#cooperation>div dl dt{
+    position: relative;
+    height: 180px;
+}
+#cooperation dl dt img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 290px;
+    height: 180px;
+}
+/*鼠标移入图片移动*/
+#cooperation  img.moveLeft{
+    left: -10px;
+    transition: all .3s linear;
+}
+#cooperation  img.moveRight{
+    left: 0;
+    transition: all .3s linear;
+}
+#cooperation dl dd{
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+/*行情资讯、平安快讯、大V论坛*/
+#information{
+    display: flex;
+    justify-content: space-between;
+    background: #F0F0F0;
+}
+#information dl{
+   width: 380px;
+}
+#information dl dd{
+    overflow: hidden;
+}
+#information dl dd a{
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 35px;
+    font-size: 14px;
+    color: #222222;
+}
+#information dl dd a:hover{
+    color: #FF5600;
+}
+#information dl dd:nth-child(2){
+    margin-bottom: 20px;
+}
+#information dl dd:last-child a{
+    padding: 5px;
+    font-size: 12px;
+}
+/*友情链接*/
+#link{
+    padding-bottom: 20px;
+}
+#link>div>a{
+    height: 64px;
+    line-height: 64px;
+}
+#link>ul{
+    display: flex;
+    flex-wrap: wrap;
+    border-left:1px solid #ddd;
+    border-top:1px solid #ddd;
+}
+#link>ul li{
+    width: 10%;
+    height: 78px;
+    border-right:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    text-align: center;
+
+}
+#link>ul li a{
+    display: block;
+    height: 78px;
+    padding: 3px;
+}
+#link ul li a:hover{
+    padding: 0;
+    border:3px solid #ddd;
+}
+
+#link ul li i{
+    display: inline-block;
+    width: 106px;
+    height: 60px;
+    margin-top: 3px;
+}
+#link ul li:first-child i{
+    background: url(../Images/chengewang/fico1.jpg) no-repeat;
+}
+#link ul li:nth-child(2) i{
+    background: url(../Images/chengewang/fico2.jpg) no-repeat;
+}
+#link ul li:nth-child(3) i{
+    background: url(../Images/chengewang/fico3.jpg) no-repeat;
+}
+#link ul li:nth-child(4) i{
+    background: url(../Images/chengewang/fico4.jpg) no-repeat;
+}
+#link ul li:nth-child(5) i{
+    background: url(../Images/chengewang/fico5.jpg) no-repeat;
+}
+#link ul li:nth-child(6) i{
+    background: url(../Images/chengewang/fico6.jpg) no-repeat;
+}
+#link ul li:nth-child(7) i{
+    background: url(../Images/chengewang/fico7.jpg) no-repeat;
+}
+#link ul li:nth-child(8) i{
+    background: url(../Images/chengewang/fico8.jpg) no-repeat;
+}
+#link ul li:nth-child(9) i{
+    background: url(../Images/chengewang/fico9.jpg) no-repeat;
+}
+#link ul li:nth-child(10) i{
+    background: url(../Images/chengewang/fico10.jpg) no-repeat;
+}
+#link ul li:nth-child(11) i{
+    background: url(../Images/chengewang/fico11.jpg) no-repeat;
+}
+#link ul li:nth-child(12) i{
+    background: url(../Images/chengewang/fico12.jpg) no-repeat;
+}
+#link ul li:nth-child(13) i{
+    background: url(../Images/chengewang/fico13.jpg) no-repeat;
+}
+#link ul li:nth-child(14) i{
+    background: url(../Images/chengewang/fico14.jpg) no-repeat;
+}
+#link ul li:nth-child(15) i{
+    background: url(../Images/chengewang/fico15.jpg) no-repeat;
+}
+#link ul li:nth-child(16) i{
+    background: url(../Images/chengewang/fico16.jpg) no-repeat;
+}
+#link ul li:nth-child(17) i{
+    background: url(../Images/chengewang/fico17.jpg) no-repeat;
+}
+#link ul li:nth-child(18) i{
+    background: url(../Images/chengewang/fico18.jpg) no-repeat;
+}
+#link ul li:nth-child(19) i{
+    background: url(../Images/chengewang/fico19.jpg) no-repeat;
+}
+#link ul li:last-child i{
+    background: url(../Images/chengewang/fico20.jpg) no-repeat;
+}
+#link ul li:hover i{
+    background-position: 0 -60px;
+}
+
+/*底部版权*/
+#footer{
+    background: #E1E1E1;
+    border-top: 1px solid #D8D9DB;
+    padding: 30px 0;
+    position: relative;
+}
+#footer .menu{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+#footer .menu a{
+    margin-right: 5px;
+}
+#footer p{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px 0;
+}
+#footer p a img{
+    vertical-align: middle;
+}
+#footer dl{
+    position: absolute;
+    width: 160px;
+    right: 200px;
+    top: 30px;
+    text-align: center;
+}
+#footer dl dd{
+    line-height: 40px;
+    font-size: 14px;
+}
+/*侧边栏悬浮广告*/
+#floatRight{
+    right: 30px;
+    top: 350px;
+    position: fixed;
+    width: 38px;
+    cursor: pointer;
+    box-shadow: 0 0 3px #ccc;
+    z-index: 100;
+}
+#floatRight li{
+    display: inline-block;
+    border-bottom: 1px solid #ddd;
+    width: 38px;
+    height: 47px;
+    position: relative;
+}
+.ico1,.ico2,.ico3,.ico4,.ico5 {
+    width: 38px;
+    height: 46px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    vertical-align: middle;
+    background-position: 0 0;
+}
+.ico1{
+    background-image:url(../Images/chengewang/ico5.png);
+}
+.ico2{
+    background-image:url(../Images/chengewang/ico6.png);
+}
+.ico3{
+    background-image:url(../Images/chengewang/ico7.png);
+}
+.ico4{
+    background-image:url(../Images/chengewang/ico8.png);
+}
+.ico5{
+    background-image:url(../Images/chengewang/ico10.png);
+}
+#floatRight li.act i{
+    background-position: 0 -46px;
+}
+.rightBar{
+    width: 272px;
+    position: absolute;
+    right: 37px;
+    top: 0;
+    display: none;
+}
+.rightBar .erweima{
+    width: 156px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ff8400;
+}
+.rightBar .erweima h5 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fd8000;
+    line-height: 26px;
+}
+.rightBar .erweima.act{
+    display: block;
+}
+.rightBar .set{
+    width: 115px;
+    border-top: 1px solid #ff8400;
+    border-right: 1px solid #ff8400;
+    background: #fff;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+}
+.rightBar .erweima div{
+    display: none;
+}
+.rightBar .erweima .act{
+    display: block;
+}
+.rightBar .set p {
+    line-height: 36px;
+    border-bottom: 1px solid #ff8400;
+    color: #b8b8b8;
+    height: 37px;
+}
+.rightBar .set p.act {
+    position: relative;
+    z-index: 20;
+}
+.rightBar .set p.act a {
+    display: block;
+    width: 114px;
+    background: #fff;
+    left: -1px;
+    height: 36px;
+    top: 0;
+    z-index: 20;
+    position: absolute;
+    color: #333;
+}
+.publicTxt{
+    line-height: 24px;
+    font-size: 14px;
+}
+.publicTxt a {
+    display: block;
+    color: #222;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #ff8400;
+    background: #fff;
+    padding: 5px 0;
+}

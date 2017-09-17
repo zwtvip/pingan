@@ -1,0 +1,23 @@
+body{
+	font:12px "microsoft yahei",Arial,Helvetica,sans-serif;
+	color:#666;
+	margin:0;
+}
+ul,p,h1,h2,h3,h4,h5,h6,dl,dd{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+img{
+	vertical-align:bottom;
+}
+a{
+	color:#666;
+	text-decoration:none;
+}
+a:hover{
+	color:#FF850E;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}

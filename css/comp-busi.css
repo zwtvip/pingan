@@ -1,0 +1,104 @@
+#lf-content>div:first-child{
+    margin-bottom: 10px;
+}
+.container  span{
+    display: block;
+    padding: 0 8px 8px 8px;
+    line-height: 25px;
+}
+#cate-box li:first-child s{
+    background-position:-40px -1180px;
+}
+#cate-box li:first-child:hover s{
+    background-position:-60px -1180px;
+}
+#cate-box li:nth-child(2) s{
+    background-position:-40px -1180px;
+}
+#cate-box li:nth-child(2):hover s{
+    background-position:-60px -1180px;
+}
+#cate-box li:nth-child(3) s{
+    background-position:-40px -860px;
+}
+#cate-box li:nth-child(3):hover s{
+    background-position:-60px -860px;
+}
+#cate-box li:nth-child(4) s{
+    background-position: 0 -1000px;
+}
+#cate-box li:nth-child(4):hover s{
+    background-position:-20px -1000px;
+}
+#cate-box li:nth-child(5) s{
+    background-position:0 -1020px;
+}
+#cate-box li:nth-child(5):hover s{
+    background-position:-20px -1020px;
+}
+#cate-box li:nth-child(6) s{
+    background-position:0 -880px;
+}
+#cate-box li:nth-child(6):hover s{
+    background-position:-20px -880px;
+}
+#cate-box li:nth-child(7) s{
+    background-position:0 -1040px;
+}
+#cate-box li:nth-child(7):hover s{
+    background-position:-20px -1040px;
+}
+#cate-box li:nth-child(8) s{
+    background-position:0 -1060px;
+}
+#cate-box li:nth-child(8):hover s{
+    background-position:-20px -1060px;
+}
+#cate-box li:nth-child(9) s{
+    background-position:0 -820px;
+}
+#cate-box li:nth-child(9):hover s{
+    background-position:-20px -820px;
+}
+#cate-box li:nth-child(10) s{
+    background-position:0 -1080px;
+}
+#cate-box li:nth-child(10):hover s{
+    background-position:-20px -1080px;
+}
+#cate-box li:nth-child(11) s{
+    background-position:0 -1100px;
+}
+#cate-box li:nth-child(11):hover s{
+    background-position:-20px -1100px;
+}
+#cate-box li:nth-child(12) s{
+    background-position:-40px -860px;
+}
+#cate-box li:nth-child(12):hover s{
+    background-position:-60px -860px;
+}
+#cate-box li:nth-child(13) s{
+    background-position:0 -1120px;
+}
+#cate-box li:nth-child(13):hover s{
+    background-position:-20px -1120px;
+}
+#cate-box li:nth-child(14) s{
+    background-position:0 -900px;
+}
+#cate-box li:nth-child(14):hover s{
+    background-position:-20px -900px;
+}
+#cate-box li:nth-child(15) s{
+    background-position:0 -1140px;
+}
+#cate-box li:nth-child(15):hover s{
+    background-position:-20px -1140px;
+}
+#cate-box li:last-child s{
+    background-position:0 -1160px;
+}
+#cate-box li:last-child:hover s{
+    background-position:-20px -1160px;
+}

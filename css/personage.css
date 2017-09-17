@@ -1,0 +1,902 @@
+*{
+    box-sizing: border-box;
+}
+/***********1、顶部集团网站链接***************/
+/*顶部背景颜色*/
+#top{
+    width:100%;
+    height:30px;
+    background-color:#eee;
+}
+#top-main{
+    margin:0 auto;
+    width:980px;
+    height:30px;
+}
+#top-main>ul>li{
+    float:left;
+    line-height: 30px;
+}
+#top-main>ul>li b{
+    border-left:1px solid #aaa;
+    margin: 0 2px;
+}
+#top-main>ul>li>a{
+    display:inline-block;
+    height: 27px;
+    line-height: 15px;
+    margin-top: 3px;
+    border:1px solid transparent;
+    border-top: 2px solid transparent;
+    padding:2px 10px 4px 10px;
+    text-shadow: 2px 2px 1px #fff;
+}
+#top-main>ul.rt>li>a{
+    font-family: simsun;
+    color: #505050;
+}
+#top-main>ul.rt>li>a:hover{
+    color:#FF850E;
+}
+/*顶部导航栏的子分类内容*/
+#top-main>ul>li>a.box{
+    border-color: #dddddd;
+    border-top-color: #FF850E;
+    border-bottom-color:#fff;
+    background: #fff;
+    position: relative;
+    z-index: 200;
+}
+/*配合子分类弹出框作相对定位*/
+li.sub-cate-box{
+    position: relative;
+}
+/*平安集团旗下业务弹出框*/
+#classify{
+    width: 550px;
+    border: 1px solid #ddd;
+    background: #ffffff;
+    padding: 10px;
+    position: absolute;
+    left: 5px;
+    top: 30px;
+    z-index: 50;
+    display: none;
+    overflow: hidden;
+}
+
+#classify>div p{
+    font-size:16px ;
+    font-weight: bold;
+    color: #FF850E;
+}
+#classify>div ul{
+    line-height: 25px;
+}
+/*1、保险业务*/
+div.insurance{
+    width: 90px;
+}
+/*2、银行业务*/
+div.bank{
+    margin: 0 20px;
+    width: 90px;
+}
+div.bank>p{
+    padding: 0 10px;
+}
+div.bank ul{
+    border-left:1px dashed #dddddd ;
+    border-right:1px dashed #dddddd ;
+    padding: 0 10px;
+}
+/*3、投资业务*/
+div.investment{
+    width:280px ;
+}
+div.investment ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+div.investment li{
+    width: 50%;
+}
+
+/*平安一账通弹出框*/
+li.yzt{
+    position: relative;
+}
+li.yzt>ul{
+    width: 130px;
+    border: 1px solid #ddd;
+    background: #ffffff;
+    padding: 10px;
+    position: absolute;
+    line-height: 25px;
+    left: 5px;
+    top: 30px;
+    z-index: 100;
+    display: none;
+}
+
+/*在线客服弹出框*/
+li.online{
+    position: relative;
+}
+li.online>ul{
+    width: 70px;
+    border: 1px solid #ddd;
+    background: #ffffff;
+    padding: 5px 8px;
+    position: absolute;
+    line-height: 25px;
+    left: 0;
+    top: 29px;
+    z-index: 100;
+    display: none;
+}
+
+/****************2、LOGO和搜索框*****************/
+#logo{
+    width: 980px;
+    margin: 20px auto ;
+    height: 56px;
+}
+#search-box>div{
+    display: flex;
+    width: 400px;
+    height: 30px;
+    padding: 3px;
+    background: #FF850E;
+}
+#search-box input{
+    border:none;
+    height: 24px;
+    width: 220px;
+    padding: 2px 0 2px 30px;
+    background:#fff url(../Images/search_03.jpg) no-repeat 5px center;
+}
+#search-box>div div.bank-box{
+    width: 80px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    border-left: 1px solid #ccc;
+    background: #F0F0F0;
+}
+#search-box>div div.bank-box b{
+    display:inline-block;
+    border: 5px solid transparent;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #999;
+    position: relative;
+    top:2px;
+    left: 10px;
+}
+/*银行下拉列表弹出框*/
+div.bank-box{
+    position: relative;
+}
+div.bank-box ul{
+    position: absolute;
+    width: 80px;
+    border: 1px solid #ddd;
+    border-top: none;
+    background: #fff;
+    left: -1px;
+    top: 24px;
+    z-index: 100;
+    height: 0;
+    overflow: hidden;
+}
+div.bank-box>.open{
+    height: 110px;
+    transition: all .4s linear;
+}
+.close{
+    height: 0;
+    transition: all .4s linear;
+}
+div.bank-box>ul>li>a{
+    display: block;
+    padding: 2px 0;
+}
+div.bank-box li>a:hover{
+    color: #666;
+    background: #eee;
+}
+
+#search-box button{
+    width: 100px;
+    border: none;
+    background: #FF850E;
+    color: #fff;
+    font-size: 14px;
+    cursor:pointer;
+}
+#search-box p{
+    padding: 5px;
+}
+#search-box p span{
+    color: #A9A9A9;
+}
+#search-box p a{
+    color: #FF850E;
+}
+#search-box p i{
+    display: inline-block;
+    height:10px;
+    border-right: 1px solid #A9A9A9;
+    margin: 0 5px;
+}
+
+/****************3、导航栏*****************/
+#nav{
+    width: 100%;
+    height: 50px;
+    background:#FF850E;
+    border-top:1px solid #FF5C03;
+    border-bottom:1px solid #FF5C03;
+}
+#nav>div{
+    border-top: 1px solid #FFC083;
+}
+#cateBox{
+    width: 980px ;
+    margin: 0 auto;
+    height:47px ;
+    display: flex;
+}
+#cateBox>li{
+    border-right:1px solid #FD9A45 ;
+}
+#cateBox>li>a{
+    display: block;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 0 15px;
+}
+#cateBox>li>a.present{
+    background: #F67009;
+    border-left:1px solid #FD9A45 ;
+}
+#cateBox>li>a:hover{
+    background: #F67009;
+}
+/*公共样式*/
+div.common{
+    position: absolute;
+    top: 47px;
+    padding: 10px 0 10px 20px;
+    border: 1px solid #dddddd;
+    border-top: none;
+    display: none;
+    background: #fff;
+    z-index: 100;
+}
+ul.common{
+    float:left;
+    padding: 5px 15px 0 0;
+    margin-right: 25px;
+    border-right:1px dashed #ddd;
+}
+ul.last{
+    border-right:none;
+    margin-right: 0;
+}
+ul.common li{
+    line-height: 25px;
+}
+ul.common li:first-child{
+    font-size: 16px;
+    color: #000;
+    margin-bottom:5px;
+    font-weight: 500;
+}
+/*个人业务弹出框*/
+#personage{
+    position: relative;
+}
+#personage>div.common{
+    width: 720px;
+}
+#personage>div ul li span{
+    margin-left: 5px;
+    padding: 0 2px;
+    color: #ffffff;
+    background: #FF0000;
+}
+/*小企业弹出框*/
+#peanuts{
+    position:relative;
+}
+#peanuts div{
+    width: 300px;
+}
+/*公司业务弹出框*/
+#company{
+    position:relative;
+}
+#company div{
+    width: 130px;
+}
+#company div ul{
+    border-right: none;
+    margin-right:0 ;
+}
+#company div ul li:first-child{
+    font-size: 12px;
+    color: #666;
+}
+/*同业金融弹出框*/
+#financial{
+    position:relative;
+}
+#financial div{
+    width:670px;
+}
+/*投资银行弹出框*/
+#investment-bank{
+    position:relative;
+}
+#investment-bank div{
+    width: 190px;
+}
+#investment-bank div ul{
+    border-right: none;
+    margin-right:0 ;
+}
+#investment-bank div ul li:first-child{
+    font-size: 12px;
+    color: #666;
+}
+/*信用卡弹出框*/
+#credit-card{
+    position:relative;
+}
+#credit-card div{
+    width: 125px;
+}
+#credit-card div ul{
+    border-right: none;
+    margin-right:0 ;
+}
+#credit-card div ul li:first-child{
+    font-size: 12px;
+    color: #666;
+}
+/*橙e网弹出框*/
+#cheng-e{
+    position:relative;
+}
+#cheng-e div{
+    width: 90px;
+}
+#cheng-e div ul{
+    border-right: none;
+    margin-right:0 ;
+}
+#cheng-e div ul li:first-child{
+    font-size: 12px;
+    color: #666;
+}
+/*投资者关系弹出框*/
+#investor-relation{
+    position:relative;
+}
+#investor-relation div{
+    width:150px;
+}
+#investor-relation div ul{
+    border-right: none;
+    margin-right:0 ;
+}
+#investor-relation div ul li:first-child{
+    font-size: 12px;
+    color: #666;
+}
+
+/*关于银行弹出框*/
+#about-bank{
+    position:relative;
+}
+#about-bank div{
+    width:94px;
+}
+#about-bank div ul{
+    border-right: none;
+    margin-right:0 ;
+}
+#about-bank div ul li:first-child{
+    font-size: 12px;
+    color: #666;
+}
+/*页面主体*/
+#main{
+    width: 980px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+/*面包屑导航*/
+#breadcrumb{
+    padding: 10px;
+}
+#breadcrumb span{
+    color: #F1592F;
+}
+/*左侧列表菜单*/
+#lf-content{
+    width:150px;
+}
+/*个人网银登录*/
+.login{
+    padding: 15px 5px;
+    background-image:linear-gradient(to bottom,#f3f3f3 0%,#fdfdfd 100%);
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+.login>a{
+    display: block;
+    width: 130px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    margin:0 auto;
+    padding-right:8px ;
+    font-weight: bold;
+    background:url(../Images/personage/long_but_en_div.jpg) repeat right 0;
+}
+.login>a>div{
+    background:url(../Images/personage/long_but_en.jpg)  repeat;
+    padding: 7px 0 7px 5px;
+}
+.login>p{
+    padding: 8px 0 0 5px;
+}
+.login>p b{
+    color:#F15922;
+}
+#lf-content>p{
+    color: #F15922;
+    font-size: 14px;
+    padding: 10px 0;
+}
+/*左侧列表分类*/
+#cate-box{
+    border-top:1px solid #ccc;
+}
+#cate-box>li{
+    border-bottom:1px solid #ccc;
+}
+#cate-box>li>a{
+    display: flex;
+    padding: 7px 0;
+    line-height: 20px;
+    position: relative;
+}
+#cate-box>li>a s{
+    width: 20px;
+    height:20px;
+    background: url(../Images/personage/ui2.gif) no-repeat;
+    margin: 0 5px;
+}
+#cate-box>li>a b{
+    width: 12px;
+    height: 12px;
+    background: url(../Images/personage/ui2.gif) no-repeat -150px -319px;
+    position: absolute;
+    top: 12px;
+    right: 8px;
+}
+#cate-box>li:first-child s{
+    background-position:0 -1022px;
+}
+#cate-box>li:first-child:hover s{
+    background-position:-20px -1022px;;
+}
+#cate-box>li:nth-child(2) s{
+    background-position:0 -800px;
+}
+#cate-box>li:nth-child(2):hover s{
+    background-position:-20px -800px;
+}
+#cate-box>li:nth-child(3) s{
+    background-position:0 -820px;
+}
+#cate-box>li:nth-child(3):hover s{
+    background-position:-20px -820px;
+}
+#cate-box>li:nth-child(4) s{
+    background-position: -80px -880px;
+}
+#cate-box>li:nth-child(4):hover s{
+    background-position:-100px -880px;
+}
+#cate-box>li:nth-child(5) s{
+    background-position:-80px -920px;
+}
+#cate-box>li:nth-child(5):hover s{
+    background-position:-100px -920px;
+}
+#cate-box>li:nth-child(6) s{
+    background-position:0 -840px;
+}
+#cate-box>li:nth-child(6):hover s{
+    background-position:-20px -840px;
+}
+#cate-box>li:nth-child(7) s{
+    background-position:0 -860px;
+}
+#cate-box>li:nth-child(7):hover s{
+    background-position:-20px -860px;
+}
+#cate-box>li:nth-child(8) s{
+    background-position:0 -880px;
+}
+#cate-box>li:nth-child(8):hover s{
+    background-position:-20px -880px;
+}
+#cate-box>li:nth-child(9) s{
+    background-position:0 -900px;
+}
+#cate-box>li:nth-child(9):hover s{
+    background-position:-20px -900px;
+}
+#cate-box>li:nth-child(10) s{
+    background-position:0 -920px;
+}
+#cate-box>li:nth-child(10):hover s{
+    background-position:-20px -920px;
+}
+#cate-box>li:nth-child(11) s{
+    background-position:0 -940px;
+}
+#cate-box>li:nth-child(11):hover s{
+    background-position:-20px -940px;
+}
+#cate-box>li:nth-child(12) s{
+    background-position:0 -960px;
+}
+#cate-box>li:nth-child(12):hover s{
+    background-position:-20px -960px;
+}
+#cate-box>li:last-child s{
+    background-position:0 -1140px;
+}
+#cate-box>li:last-child:hover s{
+    background-position:-20px -1140px;
+}
+
+/*二级伸缩菜单*/
+#cate-box li ul{
+    display: none;
+}
+#cate-box .open>ul{/*目标样式*/
+    display: block;
+}
+#cate-box ul li{
+    border-top: 1px solid #ccc;
+}
+#cate-box ul li:last-child{
+    border-bottom:none;
+}
+#cate-box ul li a{
+    display: flex;
+    padding:7px 15px;
+}
+#cate-box ul li a i{
+    width: 8px;
+    height: 10px;
+    margin-right: 5px;
+    background: url(../Images/personage/ui2.gif)no-repeat 0 -514px;
+    position: relative;
+    top: 3px;
+}
+
+/*右侧主要内容*/
+#rt-conment{
+    width: 820px;
+    margin-left: 10px;
+}
+#rt-conment div.adv{
+    display: flex;
+    justify-content: space-between;
+    height: 264px;
+    width: 100%;
+}
+/*广告轮播*/
+#banner{
+    position: relative;
+    width:555px;
+    height: 264px;
+}
+.wrap{
+    width: 555px;
+    height: 264px;
+    position: relative;
+    overflow: hidden;
+}
+#pic{
+    height: 264px;
+    position: absolute;
+}
+#pic li{
+    width: 100%;
+    height: 264px;
+}
+#pic img{
+    width: 100%;
+    height: 100%;
+}
+/*图片轮播选择圆点*/
+#banner>ul{
+    position: absolute;
+    display: flex;
+    top: 10px;
+    right: 20px;
+}
+#banner>ul li{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #C3C3C3;
+    margin-right: 10px;
+}
+#banner>ul li.active{
+    background: #FF8400;
+}
+/*右侧登录*/
+#rt-login{
+    width: 255px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#rt-login>p{
+    display: flex;
+    background-image:linear-gradient(to bottom,#f3f3f3 0%,#fdfdfd 100%);
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+#rt-login>p s{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../Images/personage/ui2.gif) no-repeat 0 -200px;
+}
+#rt-login>p span{
+    margin-left: 5px;
+    font-weight: bold;
+    color: #F15922;
+    font-size: 14px;
+}
+/*快速行动入口登录框*/
+ul.fast-login{
+    padding: 10px;
+}
+ul.fast-login a{
+    display: flex;
+    justify-content: space-between;
+    padding-left:10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    height: 34px;
+    background: #F0F0F0;
+}
+ul.fast-login a span{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 32px;
+}
+ul.fast-login a div{
+    width: 32px;
+    height: 32px;
+    background: url(../Images/personage/ui_repeat.gif)  repeat-x 0 -253px;
+}
+ul.fast-login a div b{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: 6px 8px;
+    background: url(../Images/personage/ui2.gif) no-repeat -218px -166px;
+}
+
+/*重要公告*/
+#important-notice{
+    margin:20px 0;
+    border:1px solid #cccccc;
+    background: #F3F3F3;
+    line-height: 35px;
+}
+#important-notice s{
+    display: inline-block;
+    width: 20px;
+    height:20px;
+    background: url(../Images/personage/ui2.gif) no-repeat -60px -980px;
+    position: relative;
+    top: 5px;
+}
+#important-notice span{
+    margin-left:10px ;
+    font-size: 14px;
+}
+/*个人业务*/
+#personal-business>p{
+    font-size: 26px;
+    font-weight: bold;
+    color: #F15922;
+    padding:0 0 10px 10px;
+}
+#important-productor s{
+    display:inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../Images/personage/ui2.gif) no-repeat -140px -225px;
+    margin-right: 2px;
+
+}
+/*公共样式*/
+.same{
+    border:1px solid #cccccc;
+    border-radius: 5px;
+}
+p.common{
+    background: #F3F3F3;
+    padding: 8px;
+    color:#F15922 ;
+    font-size: 14px;
+    border-bottom:1px solid #cccccc;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container>div{
+    width: 33%;
+}
+.container>div>p{
+    color:#F15922 ;
+    padding: 8px;
+}
+.container>div>div{
+    padding: 0 10px 10px 10px;
+}
+.container>div>div span{
+    width: 120px;
+    margin-left: 5px;
+    line-height: 1.8em;
+}
+.container  span i{
+    display: inline-block;
+    border:5px solid transparent;
+    width: 0;
+    height: 0;
+    border-left-color:#F15922;
+}
+#other-productor{
+    margin-top: 10px;
+}
+#other-productor>div{
+    width: 33%;
+}
+#other-productor>div>div{
+    padding: 10px;
+}
+#other-productor>div:nth-child(2){
+    margin: 0 4px;
+}
+/*7、底部服务、帮助中心*/
+#service{
+    background:#F0ECEB;
+    border-top:1px solid #E1DEDD;
+}
+#bank-service{
+    width: 980px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/*左侧平安logo*/
+#foot-logo{
+    width: 241px;
+}
+#foot-logo h3{
+    color: #005E3C;
+    padding: 10px 0;
+    font-size: 16px;
+}
+#foot-logo div{
+    height: 40px;
+    line-height: 40px;
+}
+#foot-logo div a{
+    display: block;
+    font-size: 16px;
+    color: #6E5D55;
+}
+#foot-logo div a:hover{
+    color: #6E5D55;
+}
+#foot-logo s{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius:50% ;
+    position: relative;
+    top: 8px;
+    margin-right: 5px;
+    background:#fff url(../Images/6.jpg) no-repeat center center;
+}
+/*右侧帮助中心*/
+#foot-help{
+    width: 600px;
+    padding:0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#foot-help div{
+    display: flex;
+    flex-wrap: wrap;
+}
+#foot-help div s{
+    margin-right: 10px;
+}
+#foot-help div ul{
+    padding: 5px 0;
+}
+#foot-help div ul li{
+    padding: 5px 0;
+}
+#foot-help div  b{
+    font-size: 14px;
+}
+#foot-help div s{
+    display: inline-block;
+    width: 29px;
+    height: 25px;
+    background: url(../Images/icon_all.gif) no-repeat;
+    position: relative;
+    top:5px;
+}
+#foot-help div:first-child s{
+    background-position: -270px -778px;
+}
+#foot-help div:nth-child(2) s{
+    background-position: -271px -700px;
+}
+#foot-help div:nth-child(3) s{
+    background-position: -271px -619px;
+}
+#foot-help div:last-child s{
+    background:url(../Images/ico_foot_add_move.gif) no-repeat;
+}
+
+/*8、底部版权*/
+#copyright{
+    background: #F0ECEB;
+}
+#copyright div{
+    width: 980px;
+    margin: 0 auto;
+    border-top: 1px solid #E1DFDE;
+    padding: 5px;
+}
+#copyright s{
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    background: url(../Images/icon_all.gif) no-repeat  -125px -60px ;
+    margin-right: 10px;
+}
+#copyright b{
+    display: inline-block;
+    width: 16px;
+    height: 23px;
+    background: url(../Images/icon_all.gif) no-repeat -180px -60px ;
+}
+#copyright div p{
+    text-align: center;
+    padding: 5px;
+}

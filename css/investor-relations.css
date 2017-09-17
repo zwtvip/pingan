@@ -1,0 +1,116 @@
+#rt-conment{
+    width: 798px;
+    margin-left: 10px;
+}
+#rt-conment>p{
+    margin-bottom: 10px;
+}
+.public>s{
+    display: inline-block;
+    width: 20px;
+    height:20px;
+    background: url(../Images/personage/ui2.gif) no-repeat -120px -225px;
+    position: relative;
+    top: 5px;
+}
+.public a{
+    border:1px solid #D0D0D0;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.public a:hover{
+    background: #F0632B;
+    color: #fff;
+}
+.same{
+    margin-bottom: 10px;
+}
+.same>p{
+    padding: 5px;
+    background-image:linear-gradient(to bottom,#f3f3f3 0%,#f0f0f0 100%);
+}
+.container ul{
+    padding: 3px 0;
+}
+.container ul li{
+    padding: 3px 0 3px 15px;
+}
+#cate-box>li:first-child s{
+    background-position:-40px -920px;
+}
+#cate-box>li:first-child:hover s{
+    background-position:-60px -920px;
+}
+#cate-box>li:nth-child(2) s{
+    background-position:-40px -940px;
+}
+#cate-box>li:nth-child(2):hover s{
+    background-position:-60px -940px;
+}
+#cate-box>li:nth-child(3) s{
+    background-position:-40px -960px;
+}
+#cate-box>li:nth-child(3):hover s{
+    background-position:-60px -960px;
+}
+#cate-box>li:nth-child(4) s{
+    background-position: -40px -980px;
+}
+#cate-box>li:nth-child(4):hover s{
+    background-position:-60px -980px;
+}
+#cate-box>li:nth-child(5) s{
+    background-position:-40px -1000px;
+}
+#cate-box>li:nth-child(5):hover s{
+    background-position:-60px -1000px;
+}
+#cate-box>li:nth-child(6) s{
+    background-position:-40px -880px;
+}
+#cate-box>li:nth-child(6):hover s{
+    background-position:-60px -880px;
+}
+#cate-box>li:nth-child(7) s{
+    background-position:-40px -1020px;
+}
+#cate-box>li:nth-child(7):hover s{
+    background-position:-60px -1020px;
+}
+#cate-box>li:nth-child(8) s{
+    background-position:-80px -940px;
+}
+#cate-box>li:nth-child(8):hover s{
+    background-position:-100px -940px;
+}
+#cate-box>li:nth-child(9) s{
+    background-position:-40px -1040px;
+}
+#cate-box>li:nth-child(9):hover s{
+    background-position:-60px -1040px;
+}
+#cate-box>li:nth-child(10) s{
+    background-position:-40px -900px;
+}
+#cate-box>li:nth-child(10):hover s{
+    background-position:-60px -900px;
+}
+#cate-box>li:nth-child(11) s{
+    background-position:-40px -980px;
+}
+#cate-box>li:nth-child(11):hover s{
+    background-position:-60px -980px;
+}
+#cate-box>li:nth-child(12) s{
+    background-position:-40px -1060px;
+}
+#cate-box>li:nth-child(12):hover s{
+    background-position:-60px -1060px;
+}
+#cate-box>li:last-child s{
+    background-position:-40px -1080px;
+}
+#cate-box>li:last-child:hover s{
+    background-position:-60px -1080px;
+}
